@@ -28,8 +28,8 @@ class Checkpoint(Action):
             while not published:
                 task_id = publish.json()['task-id']
                 published = True
-            out_string = "{} was added to firewall group {}".format(bad_ip_list[i], blacklist_group)
+            out_string = "{} was added to firewall group {}".format(ip, blacklist_group)
             return (True, out_string)
         elif 'code' in new_host.json():
-            out_string = "{} - {}".format(bad_ip_list[i], new_host.json()['message'])
+            out_string = "{} - {}".format(ip, new_host.json()['message'])
             return (False, out_string)
