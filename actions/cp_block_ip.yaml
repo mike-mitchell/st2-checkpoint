@@ -1,0 +1,16 @@
+name: cp_block_ip
+pack: chcekpoint
+runner_type: "python-script"
+description: Block IP on Checkpoint
+entry_point: cp_block_ip.py
+parameters:
+    apikey:
+        type: string
+        description: APIKEY
+        required: true
+        position: 1
+    ip:
+        type: string
+        description: IP to Scan
+        required: true
+        position: 2
