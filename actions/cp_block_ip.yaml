@@ -1,5 +1,5 @@
 name: cp_block_ip
-pack: chcekpoint
+pack: checkpoint
 runner_type: "python-script"
 description: Block IP on Checkpoint
 entry_point: cp_block_ip.py
