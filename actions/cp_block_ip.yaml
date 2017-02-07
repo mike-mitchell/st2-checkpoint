@@ -4,13 +4,29 @@ runner_type: "python-script"
 description: Block IP on Checkpoint
 entry_point: cp_block_ip.py
 parameters:
-    apikey:
+    username:
         type: string
-        description: APIKEY
+        description: username
         required: true
         position: 1
-    ip:
+    password:
         type: string
-        description: IP to Scan
+        description: password
         required: true
         position: 2
+    ip:
+        type: string
+        description: ip
+        required: true
+        position: 3
+    host_name:
+        type: string
+        description: Host Name
+        required: true
+        position: 4
+    blacklist_group:
+        type: string
+        description: blacklist_group
+        required: true
+        position: 5
+     
